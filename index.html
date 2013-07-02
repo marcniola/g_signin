@@ -9,8 +9,8 @@
   	<script src="js/vendor/custom.modernizr.js"></script>
 	<script src="js/app.js"></script>  
   <!-- Site style -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" type="image/png" href="http://uxacrobat.info/Prototypes/Google_SignIn_Prototype/img/ux_acrobat.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <link rel="icon" type="image/png" href="http://uxacrobat.info/Prototypes/Google_SignIn_Prototype/google_signin_prototype/img/ux_acrobat.png" />
 </head>
 <body>	
 <!-- Header and Nav --> 
@@ -21,9 +21,8 @@
         <div class="large-9 columns">
           <ul class="button-group right">
             <li><a href="#" class="button">Log In</a></li>
-            <li><a href='signin.html' class="button">Sign Up</a></li>
-            <li><a href='#' class="button">Link 3</a></li>
-            <li><a href="#" class="button">Link 4</a></li>
+            <li id="firstStop"><a href='signin.html' class="button">Sign Up</a></li>
+            <li><a href='#' class="button">Link 3</a></li>            
           </ul>
         </div>
       </div> 
@@ -95,6 +94,27 @@
       </div>
     </div>
   </footer>
+  
+    <!-- Joyride-->
+    <ol class="joyride-list" data-joyride>
+          <li data-id="firstStop" data-text="Close">
+            <p>Just an example homepage, click "Sign Up" to see the Google+ Sign-in Prototype.</p>
+          </li>
+          <!--<li data-id="numero1" data-class="custom so-awesome" data-text="Next">
+            <h4>Stop #1</h4>
+            <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+          </li>
+          <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+            <h4>Stop #2</h4>
+            <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+          </li>
+          <li data-button="Next">
+            <h4>Stop #4</h4>
+            <p>It works as a modal too!</p>
+          </li>-->
+	</ol>
+    
+    <!-- Joyride End-->
 
   <script>
   
@@ -110,6 +130,7 @@
   </script>
   
   <script src="js/foundation.min.js"></script>
+  <script src="js/foundation.joyride.js"></script>
   <!--
   
   <script src="js/foundation/foundation.js"></script>
@@ -147,5 +168,8 @@
   <script>
     $(document).foundation();
   </script>
+  <script type="text/javascript">
+  $(document).foundation('joyride', 'start');
+</script>
 </body>
 </html>
